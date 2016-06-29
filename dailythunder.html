@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body class="w3-container">
+<style>
+a:hover {
+    background-color: blue;
+	font-size: 20px;
+}
+
+</style>
+
+<h2>Dailythunder nba comments search!</h2>
+
+<form action="keyword.php" method="post">
+  Keyword: <input id="keywordtext" type="text" name="name" >
+  <h6 class="w3-btn w3-small" onclick= "clearField()">Clear </h6>
+  <br>
+  Quick Search:
+	<input id="durant" type="radio" name="keyword" value="Durant" 
+	onclick="document.getElementById('keywordtext').value= value" >Durant
+	<input id="westbrook" type="radio" name="keyword" value="Westbrook" 
+	onclick="document.getElementById('keywordtext').value= value" >Westbrook
+	<input id="roberson" type="radio" name="keyword" value="Roberson"
+	onclick="document.getElementById('keywordtext').value= value" >Roberson
+	<br>
+	Display:
+	<input type="radio" name="displaynumber" value="5" checked="checked">5
+	<input type="radio" name="displaynumber" value="10">10
+	<input type="radio" name="displaynumber" value="20">20
+	<input type="radio" name="displaynumber" value="all">all(could be really slow)
+	<br>
+	<br>
+    <input method="post" action="keyword.php" name="keyword" class="w3-btn" type="submit">
+</form>
+
+<br>
+<br>
+
+
+
+<br>
+<a class="w3-btn" href="../index.html">Return to main page</a>
+
+<script>
+function clearField() {
+	if (keywordtext.disabled == true)	{
+	keywordtext.disabled = null	;
+	}
+	keywordtext.value="";
+	openRadio();
+}
+
+function closeField() {
+	keywordtext.value="";
+	keywordtext.disabled="disabled";
+}
+
+function openRadio() {
+	durant.checked=	null;
+	westbrook.checked= null;
+	roberson.checked= null;
+}
+
+</script>
+</body>
+</html>

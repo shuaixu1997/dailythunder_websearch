@@ -1,3 +1,5 @@
+#not related to the dailythunder one; just a backup for another forum named "hupu.com"
+
 #!C:/Python34 python
 import urllib.request 
 from bs4 import BeautifulSoup

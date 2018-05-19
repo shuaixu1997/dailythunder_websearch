@@ -1,5 +1,5 @@
 # dailythunder_websearch
-web keyword search based on web scraping 
+A tiny web search engine based on web scraping 
 input the keyword on the web search bar, return the newest related content inside the site "dailythunder.com"
 
 [P.S. it takes few more seconds if the keyword is rare or user wants to display more. 
